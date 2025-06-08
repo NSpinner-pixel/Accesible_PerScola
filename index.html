@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessible Design Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo" aria-label="Accessible Design Company logo">acces</div>
+      <div class="company-name">Accessible Design Co.</div>
+    </div>
+    <nav role="navigation" aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Welcome Section">
+      <h1>Welcome to Accessible Design Co.</h1>
+      <button>Get Started</button>
+    </section>
+
+    <section id="about" aria-label="About Us Section">
+      <h2>About Us</h2>
+      <p>We create accessible and user-friendly websites for everyone.</p>
+    </section>
+
+    <section id="services" aria-label="Services Section">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <article>
+          <img src="https://via.placeholder.com/100" alt="Web Design icon" />
+          <h3>Web Design</h3>
+          <p>Beautiful and accessible websites tailored for you.</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/100" alt="SEO icon" />
+          <h3>SEO</h3>
+          <p>Improve your website’s visibility on search engines.</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/100" alt="Support icon" />
+          <h3>Support</h3>
+          <p>Reliable support and maintenance for your site.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Contact Form Section">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" aria-describedby="name-desc" required />
+        <div id="name-desc">Please enter your full name.</div>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" aria-describedby="email-desc" required />
+        <div id="email-desc">We'll never share your email.</div>
+
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" aria-describedby="subject-desc" required />
+        <div id="subject-desc">What is this about?</div>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" aria-describedby="message-desc" required></textarea>
+        <div id="message-desc">Write your message here.</div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Accessible Design Co.</p>
+    <p>
+      Follow us: 
+      <a href="#" aria-label="Facebook">Facebook</a> | 
+      <a href="#" aria-label="Twitter">Twitter</a> | 
+      <a href="#" aria-label="Instagram">Instagram</a>
+    </p>
+    <p>Contact: info@accessibledesign.co</p>
+  </footer>
+</body>
+</html>
